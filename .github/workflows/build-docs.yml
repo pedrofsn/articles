@@ -15,7 +15,7 @@ jobs:
       - name: Build docs using Writerside Docker builder
         uses: JetBrains/writerside-github-action@v4
         with:
-          instance: Writerside/hi
+          instance: hi
           artifact: webHelpHI2-all.zip
           docker-version: 233.14389
 
