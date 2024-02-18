@@ -46,7 +46,7 @@ Até aqui acredito que já tenham percebido o quão poderoso é o Koin Annotatio
 
 Com a adoção do Koin Annotations além de deixarmos o código escrito de uma maneira mais simples através de anotações, ainda podemos fazer o uso de um recurso que costuma ser o motivo de muitas queixas contrárias ao uso do Koin, que é a verificação das dependências tem tempo de compilação!
 
-![brain-explosion.gif](../images/blow-mind-mind-blown.gif)
+![brain explosion meme animated gif](../images/blow-mind-mind-blown.gif)
 
 ## Compile Safety
 Com este recurso é possível validar todas as dependências em tempo de compilação tal qual o Hilt ou o Dagger faz. Apenas adicionando uma linha de código `ksp {  arg("KOIN_CONFIG_CHECK", "true") }`.
@@ -58,7 +58,7 @@ O único ponto negativo até então é que ele não consegue enxergar as depend�
 
 Abaixo temos um exemplo de erro ao tentar compilar um projeto contendo o recurso habilitado e uma dependência não ~~mapeada~~ anotada.
 
-![ksp-classb-missing-classa.png](ksp-classb-missing-classa.png)
+![ksp fail with classB missing classA.png](../images/ksp-classb-missing-classa.png)
 
 **Troubleshooting:** O Koin não conseguiu satisfazer a dependência de `ClassA` que era esperada no construtor de `ClassB`.  
 
