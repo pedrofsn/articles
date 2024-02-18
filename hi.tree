@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Artigos sobre o Koin"
+                 start-page="stream-app-player.md">
+
+    <toc-element topic="koin-annotations.md"/>
+    <toc-element topic="stream-app-player.md"/>
+</instance-profile>
