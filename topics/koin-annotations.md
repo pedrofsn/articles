@@ -52,6 +52,8 @@ Também é possível utilizar escopos e propriedades nas suas anotações, para 
 # Koin Annotations
 Até aqui acredito que já tenham percebido o quão poderoso é o Koin Annotations, e também o quão é parecido com outros players do mercado, como o Dagger e o Hilt, certo?
 
+O Koin Annotations funciona de maneira adicional aos projetos Kotlin que fazem o uso do Koin. Sendo integrável a projetos já existentes e também há novos projetos.
+
 Com a adoção do Koin Annotations além de deixarmos o código escrito de uma maneira mais simples através de anotações, ainda podemos fazer o uso de um recurso que costuma ser o motivo de muitas queixas contrárias ao uso do Koin, que é a verificação das dependências tem tempo de compilação!
 
 ![brain explosion meme animated gif](../images/blow-mind-mind-blown.gif)
@@ -61,8 +63,8 @@ Com este recurso é possível validar todas as dependências em tempo de compila
 
 Segundo a [Kotzilla](https://www.kotzilla.io/), empresa responsável por manter e distribuir o Koin, o tempo de compilação do Koin Annotations é 75% mais rápido que o Dagger ([fonte](https://www.linkedin.com/feed/update/urn:li:activity:7160561406608605185/)).
 
-Este recurso é experimental, mas já o tenho usado há algum tempo e até então não tive problemas. É válido lembrar que ele é configurável então pode ser habilitado ou desabilitado a qualquer momento - o default é `false`. 
-O único ponto negativo até então é que ele não consegue enxergar as dependências que não possuem anotações do Koin.
+O _compile safety_ é um recurso ainda experimental, mas já o utilizo há algum tempo e até então não tive problemas. É válido lembrar que ele é configurável então pode ser habilitado ou desabilitado a qualquer momento - o padrão é `false`. 
+O único ponto negativo, na minha opinião, é que o _compile safety_ não consegue enxergar as dependências declaradas em Koin DSL ou Constructor DSL.
 
 Abaixo temos um exemplo de erro ao tentar compilar um projeto contendo o recurso habilitado e uma dependência não ~~mapeada~~ anotada.
 
