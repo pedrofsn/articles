@@ -16,7 +16,7 @@ val myModule = module {
 ```
 
 ### Constructor DSL
-Desta maneira o trabalho fica bem mais simples pois não precisamos declarar de maneira explícita os parâmetros dos construtores.
+Desta maneira o trabalho fica bem mais simples, pois não precisamos declarar de maneira explícita os parâmetros dos construtores.
 
 Exemplo:
 ```
@@ -109,14 +109,14 @@ class MyModule
 Você também pode especificar o package que deverá ser observado para mapear as dependências. Da seguinte maneira:
 ```
 @Module
-@ComponentScan("com.my.packagee")
+@ComponentScan("com.my.app")
 class MyModule
 ```
 
 Ainda é possível declarar dependências diretas no seu módulo anotado utilizando funções do Kotlin.
 ```
 @Module
-@ComponentScan("com.my.packagee")
+@ComponentScan("com.my.app")
 class MyModule {
 
     @Factory
@@ -126,8 +126,6 @@ class MyModule {
 
 }
 ```
-
-Obs.: estou usando `packagee` ao invés de `package` porque `package` é uma palavra reservada.
 
 ### Mas e se eu precisar de mais um @Module?
 A inclusão de módulos continua funcionando com as anotações, da seguinte forma:
@@ -156,8 +154,8 @@ fun main() {
 # Conclusão
 O Koin Annotations pode ser utilizados em novos projetos e em projetos já existentes. Além disto ele traz uma maneira bastante idiomática para se trabalhar com injeção de dependência em Kotlin. 
 
-Acredito que este era o último passo para que o Koin conseguisse brilhar os olhos de qualquer desenvolvedor Kotlin. E digo qualquer desenvolvedor Kotlin pois ele não é específico da plataforma Android, funciona também com 
+Acredito que este era o último passo para que o Koin conseguisse brilhar os olhos de qualquer desenvolvedor Kotlin. E digo qualquer desenvolvedor Kotlin, pois ele não é específico da plataforma Android, funciona também com 
 
 # Próximos passos
-Ainda há mais temas para se cobrir em relação ao Koin Annotations, como por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy` etc. 
+Ainda há mais temas para se cobrir em relação ao Koin Annotations, por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy` etc. 
 Para estes e outros temas consulte a [documentação oficial do Koin Annotations](https://insert-koin.io/docs/reference/koin-annotations/start).
