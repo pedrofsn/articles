@@ -164,7 +164,8 @@ fun main() {
 # Conclusão
 O Koin Annotations pode ser utilizados em novos projetos e em projetos já existentes. Além disto ele traz uma maneira bastante idiomática para se trabalhar com injeção de dependência em Kotlin. 
 
-Acredito que este era o último passo para que o Koin conseguisse brilhar os olhos de qualquer desenvolvedor Kotlin. E digo qualquer desenvolvedor Kotlin, pois ele não é específico da plataforma Android, funciona também com 
+Acredito que este era o último passo que faltava para o Koin fazer brilhar os olhos de qualquer desenvolvedor Kotlin! 
+E só mais uma coisa, o Koin Annotations não é específico da plataforma Android, ele também funciona em projetos multiplataformas. 
 
 # Próximos passos
 Ainda há mais temas para se cobrir em relação ao Koin Annotations, por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy` etc. 
