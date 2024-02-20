@@ -37,9 +37,17 @@ Exemplo:
 @Single
 class ClassA()
 
-@Single
+@Factory
 class ClassB(val a: ClassA)
+
+@KoinViewModel
+class MyViewModel(b: ClassB): ViewModel()
+
+@KoinWorker
+class UploadFiles: WorkManager()
 ```
+
+Também é possível utilizar escopos e propriedades nas suas anotações, para mais detalhes consulte o guia do Koin Annotations [aqui](https://insert-koin.io/files/Koin-CheatSheet-2023.pdf). 
 
 # Koin Annotations
 Até aqui acredito que já tenham percebido o quão poderoso é o Koin Annotations, e também o quão é parecido com outros players do mercado, como o Dagger e o Hilt, certo?
