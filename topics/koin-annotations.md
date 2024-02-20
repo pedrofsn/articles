@@ -170,3 +170,5 @@ E só mais uma coisa, o Koin Annotations não é específico da plataforma Andro
 # Próximos passos
 Ainda há mais temas para se cobrir em relação ao Koin Annotations, por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy` etc. 
 Para estes e outros temas consulte a [documentação oficial do Koin Annotations](https://insert-koin.io/docs/reference/koin-annotations/start).
+
+Em breve farei um novo artigo mostrando como adicionar o Koin Annotations a um projeto que já trabalha com o Koin.
