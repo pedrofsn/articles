@@ -63,7 +63,7 @@ Com a adoção do _Koin Annotations_ além de deixarmos o código escrito de uma
 ## Compile Safety
 Com este recurso é possível validar todas as dependências em tempo de compilação tal qual o Hilt ou o Dagger faz. Apenas adicionando uma linha de código `ksp {  arg("KOIN_CONFIG_CHECK", "true") }`.
 
-Segundo a [Kotzilla](https://www.kotzilla.io/), empresa responsável por manter e distribuir o Koin, o tempo de compilação do _Koin Annotations_ é 75% mais rápido que o Dagger ([fonte](https://www.linkedin.com/feed/update/urn:li:activity:7160561406608605185/)).
+Segundo a [Kotzilla](https://www.kotzilla.io/), empresa responsável por manter e distribuir o Koin, o tempo de compilação do _Koin Annotations_ é [75% mais rápido que o Dagger](https://www.linkedin.com/feed/update/urn:li:activity:7160561406608605185/).
 
 O _compile safety_ é um recurso **ainda experimental**. Mas tenho aplicado-o em um projeto de Server-Driven UI, no core do SDK a ser utilizado pelo _client-side_ android. Em mais de 1 mês de uso não tive problemas. 
 
@@ -170,7 +170,7 @@ fun main() {
 O _Koin Annotations_ pode ser utilizados em novos projetos e em projetos já existentes. Além disto ele traz uma maneira bastante idiomática para se trabalhar com injeção de dependência em Kotlin. 
 
 Acredito que este era o último passo que faltava para o Koin fazer brilhar os olhos de qualquer desenvolvedor Kotlin! 
-E só mais uma coisa, o _Koin Annotations_ não é específico da plataforma Android, ele também funciona em projetos multiplataformas ([fonte](https://insert-koin.io/docs/reference/koin-annotations/start#kotlin-kmp-setup)). 
+E só mais uma coisa, o _Koin Annotations_ não é específico da plataforma Android, ele também [funciona em projetos multiplataformas](https://insert-koin.io/docs/reference/koin-annotations/start#kotlin-kmp-setup). 
 
 ## Próximos passos
 Ainda há mais temas para serem cobertos em relação ao _Koin Annotations_, por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy`, obter uma lista de dependências de um mesmo tipo, etc.
