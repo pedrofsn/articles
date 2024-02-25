@@ -173,7 +173,7 @@ Acredito que este era o último passo que faltava para o Koin fazer brilhar os o
 E só mais uma coisa, o _Koin Annotations_ não é específico da plataforma Android, ele também funciona em projetos multiplataformas. 
 
 ## Próximos passos
-Ainda há mais temas para serem cobertos em relação ao _Koin Annotations_, por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy`, obter uma lista de dependências de um mesmo tipo etc. 
+Ainda há mais temas para serem cobertos em relação ao _Koin Annotations_, por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy`, obter uma lista de dependências de um mesmo tipo, etc.
 Para estes e outros temas consulte a [documentação oficial do Koin Annotations](https://insert-koin.io/docs/reference/koin-annotations/start).
 
 Em breve farei um novo artigo demostrando como adicionar o _Koin Annotations_ a um projeto que já trabalha com o Koin.
