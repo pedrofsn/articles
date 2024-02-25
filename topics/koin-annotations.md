@@ -32,7 +32,7 @@ val myModule = module {
 ```
 
 ### Anotações
-E por fim, chegamos onde a mágica realmente acontece, pois podemos deixar de usar (ou não) a declaração de dependências dentro de um módulo Koin. Apenas utilizando as anotações nas classes das nossas dependências.
+E por fim, chegamos onde a mágica realmente acontece, pois podemos deixar de usar (ou não) a declaração de dependências num módulo Koin. Apenas utilizando as anotações nas classes das nossas dependências.
 
 Exemplo:
 ```
@@ -52,20 +52,20 @@ class UploadFiles: WorkManager()
 Também é possível utilizar escopos e propriedades nas suas anotações, para mais detalhes consulte o guia do Koin Annotations [aqui](https://insert-koin.io/files/Koin-CheatSheet-2023.pdf). 
 
 ## Koin Annotations
-Até aqui acredito que já tenham percebido o quão poderoso é o Koin Annotations, e também o quão é parecido com outros players do mercado, como o Dagger e o Hilt, certo?
+Até aqui acredito que já tenham percebido o quão poderoso é o Koin Annotations, e também o quão é parecido com outros _players_ do mercado, como o Dagger e o Hilt, certo?
 
 O _Koin Annotations_ funciona de maneira adicional aos projetos Kotlin que fazem o uso do Koin. Sendo integrável a projetos já existentes e também há novos projetos.
 
-Com a adoção do _Koin Annotations_ além de deixarmos o código escrito de uma maneira mais simples através de anotações, ainda podemos fazer o uso de um recurso que costuma ser o motivo de muitas queixas contrárias ao uso do Koin, que é a verificação das dependências em tempo de compilação!
+Com a adoção do _Koin Annotations_ além de deixarmos o código escrito de uma maneira mais simples por anotações, ainda podemos fazer o uso de um recurso que costuma ser o motivo de muitas queixas contrárias ao uso do Koin, que é a verificação das dependências em tempo de compilação!
 
 ![brain explosion meme animated gif](../images/blow-mind-mind-blown.gif)
 
 ## Compile Safety
-Com este recurso é possível validar todas as dependências em tempo de compilação tal qual o Hilt ou o Dagger faz. Apenas adicionando uma linha de código `ksp {  arg("KOIN_CONFIG_CHECK", "true") }`.
+Com este recurso é possível validar todas as dependências em tempo de compilação tal qual o Hilt ou o Dagger faz. Apenas adicionando uma linha de código `ksp { arg("KOIN_CONFIG_CHECK", "true") }`.
 
 Segundo a [Kotzilla](https://www.kotzilla.io/), empresa responsável por manter e distribuir o Koin, o tempo de compilação do _Koin Annotations_ é [75% mais rápido que o Dagger](https://www.linkedin.com/feed/update/urn:li:activity:7160561406608605185/).
 
-O _compile safety_ é um recurso **ainda experimental**. Mas tenho aplicado-o em um projeto de Server-Driven UI, no core do SDK a ser utilizado pelo _client-side_ android. Em mais de 1 mês de uso não tive problemas. 
+O _compile safety_ é um recurso **ainda experimental**. Mas tenho aplicado-o num projeto de Server-Driven UI, no core do SDK_ a ser utilizado pelo _client-side_ android. Em mais de 1 mês de uso não tive problemas. 
 
 É válido lembrar que o _compile safety_ é configurável então pode ser habilitado ou desabilitado a qualquer momento via arquivo gradle - o padrão é `false`/desabilitado. 
 
@@ -78,7 +78,7 @@ Abaixo temos um exemplo de erro ao tentar compilar um projeto contendo o recurso
 **Troubleshooting:** O Koin não conseguiu satisfazer a dependência de `ClassA` que era esperada no construtor de `ClassB`.  
 
 ## Mas e os meus módulos?
-Por baixo do capô, o _Koin Annotations_ gerará um módulo que contém todas as dependências mapeadas. E pra usar este módulo no seu tradicional `startKoin` é muito simples, exemplo: 
+Por baixo do capô, o _Koin Annotations_ gerará um módulo que contém todas as dependências mapeadas. E para usar este módulo no seu tradicional `startKoin` é muito simples, exemplo: 
 
 ```
 // Usar o módulo default gerado pelo Koin Annotations
@@ -94,10 +94,10 @@ fun main() {
 }
 ```
 ### Mas e a organização?
-Se você pensar em um projeto muito grande, com várias dependências, o módulo default pode não soar como algo muito organizado.
-Para evitar que o _Koin Annotations_ gere este módulo basta desativar esta configuração padrão com `ksp {  arg("KOIN_DEFAULT_MODULE", "false") }`.
+Se você pensar num projeto muito grande, com várias dependências, o módulo default pode não soar como algo muito organizado.
+Para evitar que o _Koin Annotations_ gere este módulo basta desativar esta configuração padrão com `ksp { arg("KOIN_DEFAULT_MODULE", "false") }`.
 
-E neste caso, deveremos passar a declarar o uso dos módulos gerados pelas anotações. Vide os exemplos abaixo.
+E neste caso, deveremos passar a declarar o uso dos módulos gerados pelas anotações. Veja os exemplos abaixo.
 
 Módulo Koin com Koin Annotations:
 ```
@@ -115,7 +115,7 @@ fun main() {
 ```
 
 ### Como declarar as dependências de cada @Module?
-Agora vejamos mais uma anotação para o seu módulo, a `@ComponentScan`. Ela fará com que todos as dependências declaradas no mesmo package e subpackages sejam mapeadas para o seu `@Module`. Veja o exemplo a seguir:
+Agora vejamos mais uma anotação para o seu módulo, a `@ComponentScan`. Ela fará com que todas as dependências declaradas no mesmo package e subpackages sejam mapeadas para o seu `@Module`. Veja o exemplo a seguir:
 ```
 @Module
 class MyModule
@@ -143,7 +143,7 @@ class MyModule {
 ```
 
 ### Mas e se eu precisar de mais um @Module?
-A inclusão de módulos continua funcionando com as anotações, da seguinte forma:
+A inclusão de módulos funciona com as anotações, da seguinte forma:
 ```
 @Module
 class ModuleA
