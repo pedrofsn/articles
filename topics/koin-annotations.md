@@ -1,4 +1,6 @@
-# Declarando dependências com Koin
+# Koin-Annotations
+
+## Declarando dependências com Koin
 Através deste artigo você irá **aprender** todas as formas de **como realizar as declarações de dependências utilizando** o Koin - Koin DSL, Constructor DSL e finalmente o poderosíssimo **Koin Annotations**.
 
 ### Koin DSL
@@ -49,7 +51,7 @@ class UploadFiles: WorkManager()
 
 Também é possível utilizar escopos e propriedades nas suas anotações, para mais detalhes consulte o guia do Koin Annotations [aqui](https://insert-koin.io/files/Koin-CheatSheet-2023.pdf). 
 
-# Koin Annotations
+## Koin Annotations
 Até aqui acredito que já tenham percebido o quão poderoso é o Koin Annotations, e também o quão é parecido com outros players do mercado, como o Dagger e o Hilt, certo?
 
 O _Koin Annotations_ funciona de maneira adicional aos projetos Kotlin que fazem o uso do Koin. Sendo integrável a projetos já existentes e também há novos projetos.
@@ -164,13 +166,13 @@ fun main() {
 }
 ```
 
-# Conclusão
+## Conclusão
 O _Koin Annotations_ pode ser utilizados em novos projetos e em projetos já existentes. Além disto ele traz uma maneira bastante idiomática para se trabalhar com injeção de dependência em Kotlin. 
 
 Acredito que este era o último passo que faltava para o Koin fazer brilhar os olhos de qualquer desenvolvedor Kotlin! 
 E só mais uma coisa, o _Koin Annotations_ não é específico da plataforma Android, ele também funciona em projetos multiplataformas. 
 
-# Próximos passos
+## Próximos passos
 Ainda há mais temas para serem cobertos em relação ao _Koin Annotations_, por exemplo: especificar o binding de uma dependência, injetar um parâmetro, injetar uma dependência `lazy`, obter uma lista de dependências de um mesmo tipo etc. 
 Para estes e outros temas consulte a [documentação oficial do Koin Annotations](https://insert-koin.io/docs/reference/koin-annotations/start).
 
