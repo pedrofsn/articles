@@ -118,6 +118,7 @@ fun main() {
 Agora vejamos mais uma anotação para o seu módulo, a `@ComponentScan`. Ela fará com que todas as dependências declaradas no mesmo package e subpackages sejam mapeadas para o seu `@Module`. Veja o exemplo a seguir:
 ```
 @Module
+@ComponentScan
 class MyModule
 ```
 
